@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Programação de CLP e IHM na Prática para Indústria</title>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --bg-card: #020617;
+      --border: #1e293b;
+      --primary: #38bdf8;
+      --accent: #22c55e;
+      --text: #e5e7eb;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    h1, h2, h3 { color: var(--primary); }
+    p { line-height: 1.6; }
+
+    .hero {
+      background: linear-gradient(180deg, #020617, #0f172a);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--accent);
+      color: #022c22;
+      padding: 16px 30px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 30px;
+    }
+
+    .btn:hover { background: #16a34a; }
+
+    .section { margin-bottom: 80px; }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: var(--bg-card);
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+    }
+
+    .highlight {
+      background: var(--bg-card);
+      padding: 30px;
+      border-left: 5px solid var(--primary);
+    }
+
+    .price-box {
+      background: var(--bg-card);
+      border: 2px solid var(--accent);
+      padding: 40px 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .price {
+      font-size: 36px;
+      font-weight: bold;
+      color: var(--accent);
+    }
+
+    ul {
+      margin-top: 20px;
+      padding-left: 20px;
+    }
+
+    ul li { margin-bottom: 10px; }
+
+    .img-center {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 30px auto;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+    }
+
+    footer {
+      background: #020617;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container section">
+      <h1>Programação de CLP e IHM na Prática para Indústria</h1>
+      <p>
+        Aprenda a programar <strong>CLP Mitsubishi FX3U</strong> do zero ao nível intermediário,
+        integrando com <strong>IHM Samkoon</strong> em aplicações reais da indústria.
+      </p>
+
+      <!-- IMAGEM PRINCIPAL (substitua pelo nome correto do arquivo) -->
+      <img src="./Aplicação1.png" alt="Integração CLP e IHM" class="img-center">
+
+      <a class="btn" href="https://pay.hotmart.com/Q103578815L" target="_blank">
+        Quero aprender CLP agora
+      </a>
+    </div>
+  </section>
+
+  <!-- PARA QUEM É -->
+  <section class="container section">
+    <h2>Para quem é este curso</h2>
+    <div class="cards">
+      <div class="card">✔ Iniciantes em automação industrial</div>
+      <div class="card">✔ Técnicos e eletricistas</div>
+      <div class="card">✔ Estudantes de elétrica, mecatrônica e automação</div>
+      <div class="card">✔ Profissionais autônomos</div>
+      <div class="card">✔ Profissionais da automação industrial</div>
+    </div>
+    <p style="margin-top:20px;"><strong>Conhecimento desejável:</strong> eletricidade básica.</p>
+  </section>
+
+  <!-- PROBLEMA -->
+  <section class="container section highlight">
+    <h2>O maior desafio de quem estuda automação</h2>
+    <p>
+      Muitos profissionais aprendem apenas a teoria e não conseguem se posicionar no mercado de trabalho
+      por falta de oportunidade e prática real. Este curso foi criado para <strong>ensinar exatamente o que é usado na indústria</strong>.
+    </p>
+  </section>
+
+  <!-- PROMESSA -->
+  <section class="container section">
+    <h2>O que você será capaz de fazer</h2>
+    <ul>
+      <li>Programar CLP FX3U do zero ao nível intermediário</li>
+      <li>Integrar CLP com IHM Samkoon na prática</li>
+      <li>Criar projetos reais de automação industrial</li>
+      <li>Entender lógica ladder aplicada à indústria</li>
+    </ul>
+  </section>
+
+  <!-- CONTEÚDO -->
+  <section class="container section">
+    <h2>Conteúdo do curso</h2>
+
+    <h3>Fundamentos e lógica de programação</h3>
+    <ul>
+      <li>Software GX Works 2</li>
+      <li>Endereçamento</li>
+      <li>SET, RESET e MOV</li>
+      <li>Temporizadores, contadores 16 e 32 bits e comparadores</li>
+      <li>Conversão de dados (inteiro, real, word e double word)</li>
+      <li>Operações matemáticas</li>
+      <li>Criação de telas na IHM</li>
+      <li>Entradas e saídas analógicas</li>
+    </ul>
+
+    <h3>Aplicações reais desenvolvidas</h3>
+    <ul>
+      <li>Controle de nível com entrada analógica</li>
+      <li>Calculadora industrial</li>
+      <li>Medição de RPM com sensor indutivo e encoder</li>
+      <li>Barreira de segurança</li>
+      <li>RTC (data e hora)</li>
+      <li>Horímetro e contador de voltas</li>
+      <li>Controle de bombas principal e reserva</li>
+      <li>Sub-rotinas manual e automática</li>
+      <li>Saída analógica 0–10V com voltímetro virtual</li>
+      <li>Controle remoto de talha elétrica</li>
+      <li>Termostato digital</li>
+      <li>Amplificador de fibra óptica</li>
+    </ul>
+  </section>
+
+  <!-- DIFERENCIAIS -->
+  <section class="container section">
+    <h2>Por que escolher este curso</h2>
+    <div class="cards">
+      <div class="card">✔ Linguagem simples e direta</div>
+      <div class="card">✔ Conteúdo direto ao ponto</div>
+      <div class="card">✔ Foco em prática real</div>
+      <div class="card">✔ Projetos industriais</div>
+      <div class="card">✔ Didática para quem nunca programou</div>
+      <div class="card">✔ Certificado de conclusão</div>
+    </div>
+  </section>
+
+  <!-- AUTORIDADE -->
+  <section class="container section">
+    <h2>Quem será seu instrutor</h2>
+    <p><strong>Olá, pessoal! Meu nome é Fábio Beneli.</strong></p>
+    <p>
+      Atuo há vários anos na área de manutenção elétrica e automação industrial,
+      com formação técnica em Mecatrônica e graduação em Engenharia Elétrica pela Estácio.
+    </p>
+    <p>
+      Meus cursos são focados em vídeo aulas práticas, mostrando como resolver desafios reais
+      encontrados no ambiente industrial, ajudando profissionais e estudantes a evoluir
+      tecnicamente e se posicionar melhor no mercado de trabalho.
+    </p>
+  </section>
+
+  <!-- PREÇO -->
+  <section class="container section price-box">
+    <h2>Investimento</h2>
+    <div class="price">R$ 59,90</div>
+    <p>Ou até <strong>4x sem juros</strong></p>
+    <p>✔ Acesso imediato<br>✔ Garantia de 7 dias pela Hotmart</p>
+
+    <!-- IMAGEM DE PREÇO / PARCELAMENTO -->
+    <!-- <img src="preco.png" alt="Parcelamento" class="img-center"> -->
+
+    <a class="btn" href="https://pay.hotmart.com/Q103578815L" target="_blank">
+      Quero aprender CLP agora
+    </a>
+  </section>
+
+  <footer>
+    © 2025 – Curso Programação de CLP e IHM | Todos os direitos reservados
+  </footer>
+
+</body>
+</html>
